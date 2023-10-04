@@ -1,45 +1,42 @@
 .todo-container {
   width: 300px;
-  max-width: 70vw;
   margin: 15px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
   font-family: sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .todo-header {
-  text-align: center;
   font-size: 28px;
   font-weight: bold;
-  color: #0f1011; 
+  color: #0f1011;
 }
 
-.input-container {
-  margin-top: 20px;
+.todo-form {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .task-input {
-  width: 60%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 2px solid #4287d1;
-  transition: border-bottom-color 0.3s ease-in-out;
-}
-
-.task-input:focus {
-  border: none;
-  border-bottom-color: #54718f;
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #4287d1;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
 }
 
 .add-button {
-  padding: 8px 10px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 50%;
-  background-color: #eeeeee; 
+  border-radius: 6px;
+  background-color: #007bff;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -47,13 +44,30 @@
 }
 
 .add-button:hover {
-  background-color: #2dc01f; 
+  background-color: #0056b3;
+}
+
+.toggle-list-button {
+  background-color: #f9f9f9;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-list-button:hover {
+  background-color: #ddd;
 }
 
 .task-list {
   margin-top: 20px;
-  padding: 10px;
-  list-style-type: none;
+  padding: 0;
+  list-style: none;
+  display: block;
 }
 
 .task {
@@ -61,27 +75,27 @@
   justify-content: space-between;
   align-items: center;
   white-space: pre-wrap;
-  max-width: 100%; 
-  word-break: break-all; 
-  margin-bottom: 10px;
-  padding: 7px;
+  max-width: 100%;
+  word-break: break-all;
+  margin-bottom: 20px;
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #f8f9fa;
   font-family: inherit;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in-out;
 }
 
 .task:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .remove-button {
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  background-color: #eeeeee; 
+  border-radius: 6px;
+  background-color: #dc3545;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -89,37 +103,40 @@
 }
 
 .remove-button:hover {
-  background-color: #c82333; 
+  background-color: #c82333;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 @media (max-width: 768px) {
   .todo-container {
-    width: 90%;
-    padding: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
+    width: 80%;
   }
 
   .task-input {
-    width: calc(90% - 30px); 
-    max-width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
   }
-}
 
-@media (max-width: 576px) {
-  .todo-container {
-    width: 70%;
-    padding: 10px;
+  .add-button {
+    font-size: 16px;
+    padding: 12px 15px;
   }
-}
 
+  .toggle-list-button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
 
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  white-space: pre-wrap;
-  max-width: 100%; 
-  word-break: break-all; 
-  margin-bottom: 10px;
+  .task {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .remove-button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
 }
