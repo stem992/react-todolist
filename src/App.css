@@ -1,10 +1,9 @@
 .todo-container {
-  width: 500px;
-  max-width: 90vw;
+  width: 300px;
+  max-width: 70vw;
   margin: 15px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
   border-radius: 10px;
   background-color: #fff;
   font-family: sans-serif;
