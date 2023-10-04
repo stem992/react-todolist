@@ -93,12 +93,20 @@
 }
 
 
+/* CSS per dispositivi mobili */
 @media (max-width: 768px) {
   .todo-container {
     width: 90%;
+    padding: 10px; 
   }
 }
 
+@media (max-width: 576px) {
+  .todo-container {
+    width: 90%;
+    padding: 10px; 
+  }
+}
 
 .task {
   display: flex;
