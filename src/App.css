@@ -92,12 +92,15 @@
   background-color: #c82333; 
 }
 
-
 /* CSS per dispositivi mobili */
 @media (max-width: 768px) {
   .todo-container {
     width: 90%;
     padding: 10px; 
+  }
+
+  .task-input {
+    max-width: 100%; 
   }
 }
 
