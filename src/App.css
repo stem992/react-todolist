@@ -96,11 +96,12 @@
   .todo-container {
     width: 90%;
     padding: 10px;
-    max-height: 80vh; 
-    overflow-y: auto; 
+    max-height: 80vh;
+    overflow-y: auto;
   }
 
   .task-input {
+    width: calc(100% - 40px); 
     max-width: 100%;
   }
 }
@@ -108,9 +109,10 @@
 @media (max-width: 576px) {
   .todo-container {
     width: 90%;
-    padding: 10px; 
+    padding: 10px;
   }
 }
+
 
 .task {
   display: flex;
