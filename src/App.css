@@ -1,38 +1,113 @@
-.App {
+.todo-container {
+  width: 500px;
+  max-width: 90vw;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.todo-header {
   text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f1011; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.task-input {
+  width: 80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #4287d1;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.task-input:focus {
+  border: none;
+  border-bottom-color: #54718f;
+}
+
+.add-button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eeeeee; 
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.add-button:hover {
+  background-color: #2dc01f; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.task-list {
+  margin-top: 20px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: pre-wrap;
+  max-width: 100%; 
+  word-break: break-all; 
+  margin-bottom: 10px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  font-family: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.task:hover {
+  background-color: #fff;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeeee; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.remove-button:hover {
+  background-color: #c82333; 
+}
+
+
+@media (max-width: 768px) {
+  .todo-container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: pre-wrap;
+  max-width: 100%; 
+  word-break: break-all; 
+  margin-bottom: 10px;
 }
