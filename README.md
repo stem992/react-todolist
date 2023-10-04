@@ -1,6 +1,4 @@
-# App To-Do List
-
-Benvenuto nell'app To-Do List! Questa semplice applicazione ti permette di tenere traccia delle tue attività quotidiane in modo organizzato e intuitivo.
+# APP TO-DO LIST
 
 ## Caratteristiche Principali
 
