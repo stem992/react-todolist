@@ -3,7 +3,6 @@
   max-width: 70vw;
   margin: 15px auto;
   padding: 20px;
- 
   border-radius: 10px;
   background-color: #fff;
   font-family: sans-serif;
@@ -96,7 +95,7 @@
 
 @media (max-width: 768px) {
   .todo-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
